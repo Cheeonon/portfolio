@@ -1,0 +1,91 @@
+[
+    {
+        "project": "dishDash",
+        "description": "A platform game made with React",
+        "detail": "Dish Dash is a platform game that the player become a server who must keep customers happy by serving the food that they want.",
+        "link": "https://google.com",
+        "github": "https://github.com/Cheeonon/dish-dash",
+        "thumbnail": "../projects/dishdash.png",
+        "coverImg": "../projects/coverDishDash.gif",
+        "detailImg": "../projects/detailDishDash.gif",
+        "techStack": [
+            "HTML",
+            "SCSS",
+            "React",
+            "Node.js",
+            "MySQL"
+        ],
+        "num": 1
+    },
+    {
+        "project": "brainflix",
+        "description": "A mock single page application site for streaming videos",
+        "detail": "Brainflix is a school project to build out a prototype for a new video streaming platform. A package and mockup of the final product was provided. Mock API is used to obtain data for videos.",
+        "link": "",
+        "github": "https://github.com/Cheeonon/chloe-park-brainflix",
+        "thumbnail": "../projects/brainflix.png",
+        "coverImg": "../projects/brainflix.png",
+        "detailImg": "../projects/brainflix.png",
+        "techStack": [
+            "HTML",
+            "SCSS",
+            "React",
+            "Express",
+            "Node.js"
+        ],
+        "num": 2
+    },
+    {
+        "project": "brainfarm",
+        "description": "A simple browser farming game",
+        "detail": "Brainfarm is a simple browser game where user can grow crops and make money.",
+        "link": "https://google.com",
+        "github": "https://github.com/Cheeonon/farm-game",
+        "thumbnail": "../projects/brainfarm.png",
+        "coverImg": "../projects/brainfarm.png",
+        "detailImg": "../projects/brainfarm.png",
+        "techStack": [
+            "HTML",
+            "SCSS",
+            "React",
+            "Node.js"
+        ],
+        "num": 3
+    },
+    {
+        "project": "instock",
+        "description": "An app for managing warehouses and inventories",
+        "detail": "Instock is a team school project to deliver an Inventory Management System in one week. Our team was provided a mockup of the final product on Figma. We used Git/GitHub, JIRA and the Scrum methodology to work collaboratively and manage workflow.",
+        "link": "https://google.com",
+        "github": "https://github.com/nickhuynhq/instock-app",
+        "thumbnail": "../projects/instock.png",
+        "coverImg": "../projects/instock.png",
+        "detailImg": "../projects/instock.png",
+        "techStack": [
+            "React",
+            "Node.js",
+            "Express",
+            "JIRA",
+            "Github"
+        ],
+        "num": 4
+    },
+    {
+        "project": "chat-app",
+        "description": "A simple chat application that allows users to talk to each other in real-time.",
+        "detail": "This is a real-time chat application using Socket.io. User can add friend with ID, chat real-time with friends, and edit their profile.",
+        "link": "https://google.com",
+        "github": "https://github.com/Cheeonon/Chat-app",
+        "thumbnail": "../projects/chat-app.png",
+        "coverImg": "../projects/coverChat-app.png",
+        "detailImg": "../projects/detailChat-app.png",
+        "techStack": [
+            "HTML",
+            "SCSS",
+            "React",
+            "Node.js",
+            "Socket.io"
+        ],
+        "num": 5
+    }
+]

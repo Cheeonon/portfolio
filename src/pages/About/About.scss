@@ -1,0 +1,48 @@
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+
+    &__container{
+        color:rgb(72, 72, 72);
+        box-shadow:  3px 3px 20px 5px rgba(41, 41, 41, 0.05),
+                    -3px -3px 20px 5px rgba(41, 41, 41, 0.05);
+        background-color: white;
+        padding: 3rem;
+        width: 50rem;
+        height: 50%;
+        line-height: 2rem;
+        border-radius: 5px;
+
+    }
+
+    &__greetings{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: .9px;
+        font-size: 1.6rem;
+
+        &-text{
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__img{
+        margin: 1rem;
+        margin-right: 2rem;
+        width: 6rem;
+        border-radius: 50%;
+    }
+
+    &__paragraph{
+        font-family: sans-serif;
+        font-weight: 300;
+        letter-spacing: .7px;
+        font-size: 1.1rem;
+    }
+}
