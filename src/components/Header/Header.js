@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 // import { useRef } from "react";
 
 import './Header.scss';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Header = ({mouseCursor, handleSelect, projects, handleMoveLeft, handleMoveRight}) => {
   // const arrowLeft = useRef(null);
