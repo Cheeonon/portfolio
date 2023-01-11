@@ -6,6 +6,7 @@ import Projects from './pages/Projects/Projects';
 import "./styles/App.scss";
 
 function App() {
+
     return (
         <BrowserRouter>
             <Routes>

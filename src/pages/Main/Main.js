@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 
@@ -7,11 +7,11 @@ import "./Main.scss";
 
 const Main = () => {
   const [projectsState, setProjectsState] = useState(projects);
-  const [currentProject, setCurrentProject] = useState(projects[0]);
+  const [currentProject, setCurrentProject] = useState(projects[2]);
+  const mouseCursor = useRef(null);
 
   const handleMoveRight = () => {
     let newProjectsState = [...projectsState];
-
         projectsState.forEach((projectState, index) => {
             let newNum;
             if(projectState.num !== 1){
@@ -59,19 +59,17 @@ const Main = () => {
     setCurrentProject(projects[2]) 
   }
 
-  const mouseCursor = document.querySelector(".cursor");
-
-  window.addEventListener("mousemove", (event) => {
-      mouseCursor.style.left = event.pageX + "px";
-      mouseCursor.style.top = event.pageY + "px";
-  });
+  const handleMouseCursor = (event) => {
+    mouseCursor.current.style.left = event.pageX + "px";
+    mouseCursor.current.style.top = event.pageY + "px";
+  } 
 
   return (
-    <div className='main'>
-      <div class="cursor"></div>
-      <Header projects={projects} handleMoveLeft={handleMoveLeft} handleMoveRight={handleMoveRight}/>
+    <div className='main' onMouseMove={(event)=>{handleMouseCursor(event)}}>
+      <div class="cursor" ref={mouseCursor}></div>
+      <Header projects={projects} mouseCursor={mouseCursor} handleMoveLeft={handleMoveLeft} handleMoveRight={handleMoveRight}/>
       <div className="main__body">
-        <Outlet context={[currentProject, projects, handleMoveLeft, handleMoveRight]}/>
+        <Outlet context={[currentProject, projects, mouseCursor, handleMoveLeft, handleMoveRight]}/>
       </div>
     </div> 
   )

@@ -51,7 +51,6 @@
             padding: 4rem;
             padding-top: 12rem;
             letter-spacing: .05rem;
-            cursor: pointer;
 
             display: flex;
             flex-direction: column;
@@ -116,15 +115,17 @@
         &-img{
             width: 100%;
             margin-bottom: 2rem;
+            border: black dotted 1.5px;
         }
         &-title{
             font-size: 2.3rem;
             text-transform: uppercase;
             margin-top: 1rem;
+            margin-bottom: .5rem;
         }
         &-subtitle{
             font-size: 1.5rem;
-            margin-bottom: .7rem;
+            margin: 1.6rem 0 .9rem 0;
         }
         &-detail{
             font-size: 1.1rem;
@@ -135,11 +136,17 @@
         }
         &-desc{
             font-size: 1.1rem;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
             color:rgb(106, 106, 106);
             font-family: sans-serif;
             font-weight: 300;
             letter-spacing: .5px;
+        }
+        &-func::before{
+            content: "* ";
+        }
+        &-func{
+            font-size: 1rem;
         }
         &-tech{
             display: flex;
@@ -155,7 +162,8 @@
             }
         }
         &-link{
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+            color:rgb(106, 106, 106);
 
             &:hover{
                 text-decoration: underline;
