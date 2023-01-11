@@ -135,7 +135,7 @@
             letter-spacing: .5px;
         }
         &-desc{
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 1rem;
             color:rgb(106, 106, 106);
             font-family: sans-serif;
@@ -143,10 +143,7 @@
             letter-spacing: .5px;
         }
         &-func::before{
-            content: "* ";
-        }
-        &-func{
-            font-size: 1rem;
+            content: "• ";
         }
         &-tech{
             display: flex;
