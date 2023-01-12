@@ -10,6 +10,7 @@ const Projects = () => {
   const [hidden, setHidden] = useState(true);
   const handleHidden = () => {
     setHidden(!hidden);
+    mouseCursor.current.innerText = ""
   }
 
   const handleMouseOver = () => {
@@ -31,12 +32,12 @@ const Projects = () => {
     mouseCursor.current.style.height = "1.5rem";
     mouseCursor.current.style.border = "1px solid rgba(140, 140, 140, .5)";
     mouseCursor.current.style.backdropFilter = "sepia(20%)"
-    mouseCursor.current.innerHTML = '<span style="width: 80px; display: block; position: absolute; left: -1.5rem;">Click to exit</span>'
+    mouseCursor.current.innerHTML = '<span style="width: 100px; display: block; position: absolute; left: -1.8rem;">Click to exit</span>'
   };
+
 
   return (
     <div className="projects"> 
-      
       <div className="projects__lens">
         {projects.map((project) => {
           if(project.project === currentProjectTitle){
@@ -71,7 +72,7 @@ const Projects = () => {
                   <h3 className="projects__detail-subtitle">About</h3>
                   <div className="projects__detail-detail projects__detail-desc">{project.detail}</div>
                   <h3 className="projects__detail-subtitle">Details</h3>
-                  {project.functionality.map(func => (<li className="projects__detail-detail projects__detail-desc projects__detail-func">{func}</li>))}
+                  {project.functionality.map(func => (<li className="projects__detail-detail projects__detail-func">{func}</li>))}
                   <h3 className="projects__detail-subtitle">Technologies</h3>
                   <ul className="projects__detail-tech projects__detail-desc">
                     {project.techStack.map(tech => (<li className="projects__detail-tech--item">{tech}</li>))}

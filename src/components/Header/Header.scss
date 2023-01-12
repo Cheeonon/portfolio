@@ -98,6 +98,10 @@
             align-items: center;
             justify-content: center;
 
+            &:hover{
+                filter:brightness(90%);
+            }
+
             &-1{
                 transform: translateX(-300px) scale(0.9);
                 z-index: -2;
@@ -152,7 +156,7 @@
         height: 100%;
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: -3rem;
         display: flex;
         align-items: flex-end;
         overflow: hidden;
@@ -163,15 +167,16 @@
         }
 
         &-link{
-            margin-left: .7rem;
-            width: 4rem;
+            margin-right: 1rem;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             transition: all 300ms ease;
-            letter-spacing: .05rem;
             height: 60px;
+            letter-spacing: .5px;
+            font-weight: 500;
+            font-size: .8rem;
 
             &:hover{
                 transform: translateY(20px);

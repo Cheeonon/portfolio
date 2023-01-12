@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 
@@ -9,6 +9,21 @@ const Main = () => {
   const [projectsState, setProjectsState] = useState(projects);
   const [currentProject, setCurrentProject] = useState(projects[2]);
   const mouseCursor = useRef(null);
+
+  // reset num for projects(for header)
+  useEffect(()=>{
+    let newProjectsState = [...projectsState];
+    projectsState.forEach((projectState, index) => {
+        let newNum = index + 1;
+
+        let newProjectState = {...projectState};
+        newProjectState.num = newNum;
+
+        newProjectsState[index].num = newNum;
+    })
+
+    setProjectsState(newProjectsState);
+  }, [])
 
   const handleMoveRight = () => {
     let newProjectsState = [...projectsState];

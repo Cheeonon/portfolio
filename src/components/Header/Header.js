@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 import "./Header.scss";
 import { useEffect, useState } from "react";
-const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight,}) => {
+const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight}) => {
 
     const handleMouseOver = () => {
       mouseCursor.current.style.width = "3rem";
@@ -94,8 +94,8 @@ const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight,}) => {
 
                   <div className="header__film-box">
                     {projects.map((project, index) => {
-                        const filmClassList = `header__film-project header__film-project-${project.num}`;
 
+                        const filmClassList = `header__film-project header__film-project-${project.num}`;
                         return (
                             <div key={index} className={filmClassList}>
                                 <span className="header__film-title">
@@ -119,6 +119,18 @@ const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight,}) => {
 
             <div className="header__tabs">
                 <ul className="header__tabs-list">
+                    <li className="header__tabs-item" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+                        <NavLink
+                            to="/"
+                            className="header__tabs-link"
+                            activeclassname="active"
+                            onClick={() => {
+                                setCurrentLocation("home");
+                            }}
+                        >
+                            Home
+                        </NavLink>
+                    </li>
                     <li className="header__tabs-item" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
                         <NavLink
                             to="about"
