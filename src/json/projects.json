@@ -76,7 +76,7 @@
     },
     {
         "project": "chat-app",
-        "description": "A simple chat application that allows users to talk to each other in real-time.",
+        "description": "A simple chat application that allows users to talk to each other in real-time",
         "detail": "This is a real-time chat application made with Socket.io and react.",
         "link": "https://google.com",
         "functionality": ["Siging up and login are required. Single JSON file is used to store user data.", "User can add a friend with ID and start a chat.", "User can edit the name to be displayed.", "Every message that sent are saved in server. Messages contain information such as created time, user who sent, and user who received."],

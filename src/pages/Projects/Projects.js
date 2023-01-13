@@ -16,7 +16,7 @@ const Projects = () => {
   const handleMouseOver = () => {
     mouseCursor.current.style.width = "3rem";
     mouseCursor.current.style.height = "3rem";
-    mouseCursor.current.style.backdropFilter = "sepia(60%)"
+    mouseCursor.current.style.backdropFilter = "sepia(100%)"
     mouseCursor.current.style.border = "1px solid rgb(140, 140, 140)";
     mouseCursor.current.innerText = ""
   };
@@ -24,14 +24,14 @@ const Projects = () => {
   const handleMouseLeave = () => {
     mouseCursor.current.style.width = "1.5rem";
     mouseCursor.current.style.height = "1.5rem";
-    mouseCursor.current.style.backdropFilter = "sepia(20%)"
+    mouseCursor.current.style.backdropFilter = "sepia(0)"
   };
 
   const handleMouseLeaveDetail = () => {
     mouseCursor.current.style.width = "1.5rem";
     mouseCursor.current.style.height = "1.5rem";
     mouseCursor.current.style.border = "1px solid rgba(140, 140, 140, .5)";
-    mouseCursor.current.style.backdropFilter = "sepia(20%)"
+    mouseCursor.current.style.backdropFilter = "sepia(0)"
     mouseCursor.current.innerHTML = '<span style="width: 100px; display: block; position: absolute; left: -1.8rem;">Click to exit</span>'
   };
 
@@ -67,7 +67,7 @@ const Projects = () => {
               <div className="projects__detail" onClick={handleHidden} >
                 <div className="projects__detail-container" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeaveDetail}>
                   <h1 className="projects__detail-title">{project.project}</h1>
-                  <span className="projects__detail-desc">{project.description}</span>
+                  <span className="projects__detail-desc projects__detail-body">{project.description}</span>
                     {project.detailImg.map(img => (<img src={img} alt={project.project} className="projects__detail-img" />))}
                   <h3 className="projects__detail-subtitle">About</h3>
                   <div className="projects__detail-detail projects__detail-desc">{project.detail}</div>

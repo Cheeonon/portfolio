@@ -11,13 +11,14 @@ const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight}) => {
     const handleMouseOver = () => {
       mouseCursor.current.style.width = "3rem";
       mouseCursor.current.style.height = "3rem";
-      mouseCursor.current.style.backdropFilter = "sepia(60%)"
+      mouseCursor.current.style.backdropFilter = "sepia(100%)"
+
     };
 
     const handleMouseLeave = () => {
       mouseCursor.current.style.width = "1.5rem";
       mouseCursor.current.style.height = "1.5rem";
-      mouseCursor.current.style.backdropFilter = "sepia(20%)"
+      mouseCursor.current.style.backdropFilter = "sepia(0)"
 
     };
 
