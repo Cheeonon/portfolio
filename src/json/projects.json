@@ -78,7 +78,7 @@
         "project": "chat-app",
         "description": "A simple chat application that allows users to talk to each other in real-time",
         "detail": "This is a real-time chat application made with Socket.io and react.",
-        "link": "https://google.com",
+        "link": "https://chat-app-cheeon.netlify.app",
         "functionality": ["Siging up and login are required. Single JSON file is used to store user data.", "User can add a friend with ID and start a chat.", "User can edit the name to be displayed.", "Every message that sent are saved in server. Messages contain information such as created time, user who sent, and user who received.", "Test ID: 1@gmail.com / Password: 1", "Test ID: 6@gmail.com / Password: 6"],
         "github": ["https://github.com/Cheeonon/chat-app-app","https://github.com/Cheeonon/chat-app-api"],
         "thumbnail": "../projects/chat-app.png",
