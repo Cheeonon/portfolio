@@ -41,7 +41,7 @@ const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight}) => {
                 <ul className="header__profile-list">
                     <li className="header__profile-item" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/cheeon-park/"
                             target="_blank"
                             rel="noreferrer"
                             className="header__profile-link"
@@ -55,7 +55,7 @@ const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight}) => {
                     </li>
                     <li className="header__profile-item" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
                         <a
-                            href="https://gmail.com"
+                            href="mailto:cheeon00@gmail.com"
                             target="_blank"
                             rel="noreferrer"
                             className="header__profile-link"
@@ -69,7 +69,7 @@ const Header = ({ mouseCursor, projects, handleMoveLeft, handleMoveRight}) => {
                     </li>
                     <li className="header__profile-item" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
                         <a
-                            href="https://github.com"
+                            href="https://github.com/Cheeonon"
                             target="_blank"
                             rel="noreferrer"
                             className="header__profile-link"

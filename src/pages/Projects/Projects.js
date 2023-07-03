@@ -32,7 +32,7 @@ const Projects = () => {
     mouseCursor.current.style.height = "1.5rem";
     mouseCursor.current.style.border = "1px solid rgba(140, 140, 140, .5)";
     mouseCursor.current.style.backdropFilter = "sepia(0)"
-    mouseCursor.current.innerHTML = '<span style="width: 100px; display: block; position: absolute; left: -1.8rem;">Click to exit</span>'
+    mouseCursor.current.innerHTML = '<span style="width: 100px; display: block; position: absolute; left: -1.8rem;"></span>'
   };
 
 
@@ -65,6 +65,7 @@ const Projects = () => {
             return (
             <>
               <div className="projects__detail" onClick={handleHidden} >
+                <div className="projects__back">⬅</div>
                 <div className="projects__detail-container" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeaveDetail}>
                   <h1 className="projects__detail-title">{project.project}</h1>
                   <span className="projects__detail-desc projects__detail-body">{project.description}</span>
@@ -77,7 +78,7 @@ const Projects = () => {
                   <ul className="projects__detail-tech projects__detail-desc">
                     {project.techStack.map(tech => (<li className="projects__detail-tech--item">{tech}</li>))}
                   </ul>
-                  <h3 className="projects__detail-subtitle">🌐 Website</h3>
+                  <h3 className="projects__detail-subtitle">Youtube Demo</h3>
                   <a href={project.link} target="_blank" rel="noreferrer" className="projects__detail-link">{project.link}</a>
                   <h3 className="projects__detail-subtitle">Github</h3>
                   {project.github.map(link => (<a href={link} target="_blank" rel="noreferrer" className="projects__detail-link">{link}</a>))}
