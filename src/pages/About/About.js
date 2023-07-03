@@ -13,22 +13,13 @@ const About = () => {
               </div>
             </div>
             <p className="about__paragraph">
-              Since I was young, I have enjoyed solving hard problems such as math
-              or puzzle in one sitting, for hours. Whenever I got stuck on one
-              difficult problem, I spend times as much as I need until I get the
-              answer. The harder the problem is, the more I enjoyed it.
+            Ever since I was young, I've really enjoyed solving tough problems like math puzzles. I would spend hours working on them, not giving up until I found the answer. The harder the problem, the more I liked it.
             </p>
             <p className="about__paragraph">
-              I took a programming course in high school. The more I learned to code, the
-              more concepts got harder and it could be as deeper as it can be. I
-              found computers and the world that resides in computers very
-              fascinating and beautiful because of their complexity.
+            In high school, I took a programming class and as I learned more, the concepts became more challenging. I found computers and everything related to them really fascinating because they are so complex.
             </p>
             <p className="about__paragraph">
-              I am a graduate of computer networking and recently transitioned into web
-              development. I am really excited about the next phase of my learning
-              where I can pursue my passion for coding and continue to grow as a
-              developer!
+            I graduated in computer networking and recently switched to web development. I'm really excited about this new phase of learning where I can pursue my passion for coding and keep growing as a developer!
             </p>
           </div>
         </div>
